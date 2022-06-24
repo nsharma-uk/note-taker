@@ -1,5 +1,7 @@
-//import express
+//import express and other dependencies
 const express = require("express");
+const path = require("path");
+const routes = require("./routes");
 
 //declare the PORT
 const PORT = process.env.PORT || 4000;
@@ -14,6 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 //register controller function
  app.get("/", (req, res)  => {
 res.send ("hello");
+app.use(express.static(path.join(__dirname, "../public")));
+app.use(routes);
 
  })
 

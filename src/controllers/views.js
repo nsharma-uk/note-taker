@@ -10,7 +10,7 @@ const renderHomePage = (req, res) => {
 
 const renderNotesPage = (req, res) => {
   // get file path
-  const filePath = path.join(__dirname, "../../public/create.html");
+  const filePath = path.join(__dirname, "../../public/notes.html");
 
   // send file
   return res.sendFile(filePath);
