@@ -1,9 +1,19 @@
+const path = require("path");
+
 const renderHomePage = (req, res) => {
-  res.send("renderHomePage");
+  // get file path
+  const filePath = path.join(__dirname, "../../public/index.html");
+
+  //send file
+  return res.sendFile(filePath);
 };
 
 const renderNotesPage = (req, res) => {
-  res.send("renderNotesPage");
+  // get file path
+  const filePath = path.join(__dirname, "../../public/create.html");
+
+  // send file
+  return res.sendFile(filePath);
 };
 
 module.export = {
