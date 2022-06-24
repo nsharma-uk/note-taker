@@ -1,6 +1,12 @@
+const { v4: uuidv4 } = require('uuid');
+
 
 const getNotes = (req, res) => {
-  res.send("getNotes");
+  
+  
+  //read from file
+  
+
 };
 
 const createNote = (req, res) => {
