@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const readDataFromFile = (fileName) => {
-  const filePath = path.join(__dirname, `../data/${fileName}.json`);
+  const filePath = path.join(__dirname, `../../db/${fileName}.json`);
 
   const dataFromFile = fs.readFileSync(filePath, "utf8");
 
@@ -10,7 +10,7 @@ const readDataFromFile = (fileName) => {
 };
 
 const writeDataToFile = (fileName, data) => {
-  const filePath = path.join(__dirname, `../data/${fileName}.json`);
+  const filePath = path.join(__dirname, `../../db/${fileName}.json`);
 
   fs.writeFileSync(filePath, JSON.stringify(data));
 };

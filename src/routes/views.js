@@ -1,7 +1,7 @@
 //import express
 const { Router } = require("express");
 
-//import controller for index.js and notes.js
+//import controller for index.js and notes.js{
 const { renderHomePage, renderNotesPage } = require("../controllers/views");
 
 //call a function to use the router

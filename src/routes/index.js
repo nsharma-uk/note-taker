@@ -2,8 +2,8 @@
 const { Router } = require("express");
 
 //import api.js & views.js
-const api = require("./api");
-const views = require("./views");
+const api = require("./api")
+const views = require("./views")
 
 //call a function to use the router
 const router = Router();

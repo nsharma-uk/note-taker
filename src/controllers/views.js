@@ -3,8 +3,7 @@ const path = require("path");
 const renderHomePage = (req, res) => {
   // get file path
   const filePath = path.join(__dirname, "../../public/index.html");
-
-  //send file
+  //send file path.join(__dirname, ("../");
   return res.sendFile(filePath);
 };
 
@@ -16,7 +15,7 @@ const renderNotesPage = (req, res) => {
   return res.sendFile(filePath);
 };
 
-module.export = {
+module.exports = {
   renderHomePage,
   renderNotesPage,
 };

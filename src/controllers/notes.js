@@ -26,11 +26,12 @@ const createNote = (req, res) => {
     title,
     text,
   };
+  
   // get all notes from file
   const getNotes = readDataFromFile("db");
 
   //push new note into notes
-  notes.push(newNote);
+  getNotes.push(newNote);
 
   // write all items to file
   writeDataToFile(notes);

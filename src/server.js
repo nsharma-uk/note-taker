@@ -12,14 +12,8 @@ const app = express();
 //add middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-//register controller function
- app.get("/", (req, res)  => {
-res.send ("hello");
 app.use(express.static(path.join(__dirname, "../public")));
 app.use(routes);
-
- })
 
 //listens for requests by connecting to server
 app.listen(PORT, () => {
