@@ -4,7 +4,7 @@ const { v4: uuidv4 } = require("uuid");
 const { readDataFromFile, writeDataToFile } = require("../utils/fileReadWrite");
 
 const getNotes = (req, res) => {
-  //read all notes from file
+  //read all notes from data file
   const notes = readDataFromFile("db");
 
   // send all items as response
@@ -14,7 +14,7 @@ const getNotes = (req, res) => {
 const createNote = (req, res) => {
   console.log(req.body);
 
-  // get the payload from req body
+  // get the payload from req body -from user
   const { title, text } = req.body;
 
   // create uuid
@@ -26,15 +26,15 @@ const createNote = (req, res) => {
     title,
     text,
   };
-  
+
   // get all notes from file
   const getNotes = readDataFromFile("db");
 
-  //push new note into notes
+  //insert new note into notes
   getNotes.push(newNote);
 
   // write all items to file
-  writeDataToFile(notes);
+  writeDataToFile("db", getNotes);
 
   // send response
   return res.json({
@@ -53,7 +53,7 @@ const deleteNote = (req, res) => {
   const filteredNotes = notes.filter((note) => note.id !== id);
 
   // write to file
-  readDataFromFile(filteredNotes);
+  writeDataToFile("db", filteredNotes);
 
   // send response
   return res.json({
