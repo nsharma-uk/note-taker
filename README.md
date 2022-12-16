@@ -5,7 +5,7 @@ A note-taking app using the Express.js framework
 ## Table of Contents
 
 - [Project Description](#description)
-- [Deployed Heroku link](#link)
+- [Deployed link](#link)
 - [Demo](#demo)
 - [Technologies](#technologies)
 - [Installation](#installation)
@@ -23,13 +23,9 @@ With the front end starter code already in place, this project built a backend t
 
 This application used an Express.js back end to save, delete and retrieve note data from a JSON file, using the `fs` module.
 
-##Deployed Heroku link
+## Deployed link
 
 [Deployed page](https://note-taker-production.up.railway.app/notes)
-
-## Demo
-
-[View demo of the app here](https://drive.google.com/file/d/1Y8WG1YYCHuMLgrX_sg32okipAX1pf8Zg/view?usp=sharing)
 
 ## Technologies
 
@@ -88,16 +84,6 @@ Please follow the instructions below:
 npm run test
 ```
 
-## Author
-
-N Sharma
-
-## Contact me
-
-Please contact me on my email: [email](nsharmauk711@gmail.com)
-
-Visit my GitHub profile [here](https://github.com/nsharma-uk)
-
 ## User Journey
 
 ```
@@ -119,3 +105,13 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
+
+## Author
+
+N Sharma
+
+## Contact me
+
+Please contact me on my email: [email](nsharmauk711@gmail.com)
+
+Visit my GitHub profile [here](https://github.com/nsharma-uk)
