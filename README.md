@@ -25,7 +25,7 @@ This application used an Express.js back end to save, delete and retrieve note d
 
 ##Deployed Heroku link
 
-[Deployed Heroku page](https://glacial-scrubland-19662.herokuapp.com/)
+[Deployed page](https://note-taker-production.up.railway.app/notes)
 
 ## Demo
 
@@ -37,7 +37,7 @@ This application used an Express.js back end to save, delete and retrieve note d
 - Node
 - fs
 - Nodemon
-- Heroku
+- Railway
 - CSS
 
 ## Installation
